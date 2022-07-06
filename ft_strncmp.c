@@ -3,24 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mikabuto <mikabuto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: fmarsha <fmarsha@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/12 19:06:11 by mikabuto          #+#    #+#             */
-/*   Updated: 2022/03/07 17:33:20 by mikabuto         ###   ########.fr       */
+/*   Created: 2022/03/17 16:34:09 by fmarsha           #+#    #+#             */
+/*   Updated: 2022/03/17 17:39:53 by fmarsha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	ft_strncmp(const char *s1, const char *s2, int n)
+int	ft_strncmp(const char *s1, const char *s2)
 {
-	while (n && *s1 && (*s1 == *s2))
+	while (*s1 && (*s1 == *s2))
 	{
 		++s1;
 		++s2;
-		--n;
 	}
-	if (n == 0)
-		return (0);
 	return (*(unsigned char *)s1 - *(unsigned char *)s2);
 }

@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   array_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mikabuto <mikabuto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: fmarsha <fmarsha@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/07 17:15:42 by mikabuto          #+#    #+#             */
-/*   Updated: 2022/03/07 17:15:42 by mikabuto         ###   ########.fr       */
+/*   Created: 2022/03/17 16:31:10 by fmarsha           #+#    #+#             */
+/*   Updated: 2022/03/17 16:31:10 by fmarsha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "push_swap.h"
 
 void	array_sort(int *arr, int size)

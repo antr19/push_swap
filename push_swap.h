@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mikabuto <mikabuto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: fmarsha <fmarsha@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/05 13:06:11 by mikabuto          #+#    #+#             */
-/*   Updated: 2022/03/05 13:06:11 by mikabuto         ###   ########.fr       */
+/*   Created: 2022/03/17 16:35:10 by fmarsha           #+#    #+#             */
+/*   Updated: 2022/03/17 16:35:10 by fmarsha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ void			execute_rotations(t_stack_elem **head_a, t_stack_elem **head_b, \
 				t_stack_elem *elem, int ttype);
 
 //	ft_strncmp.c
-int				ft_strncmp(const char *s1, const char *s2, int n);
+int				ft_strncmp(const char *s1, const char *s2);
 
 //	ft_strlcat.c
 int				ft_strlcat(char *dst, char *src, int dstsize);

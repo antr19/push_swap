@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   actions.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mikabuto <mikabuto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: fmarsha <fmarsha@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/07 15:45:11 by mikabuto          #+#    #+#             */
-/*   Updated: 2022/03/07 15:45:11 by mikabuto         ###   ########.fr       */
+/*   Created: 2022/03/17 16:30:36 by fmarsha           #+#    #+#             */
+/*   Updated: 2022/03/17 16:30:36 by fmarsha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "push_swap.h"
 
 void	swap(t_stack_elem **head, char stack_name, int output)

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   checker.c                                          :+:      :+:    :+:   */
+/*   checker_bonus.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mikabuto <mikabuto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: fmarsha <fmarsha@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/07 17:14:39 by mikabuto          #+#    #+#             */
-/*   Updated: 2022/03/07 19:13:13 by mikabuto         ###   ########.fr       */
+/*   Created: 2022/03/17 16:31:34 by fmarsha           #+#    #+#             */
+/*   Updated: 2022/03/17 17:40:42 by fmarsha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,27 +26,27 @@ static int	is_not_finally_sorted(t_stack_elem *head)
 static int	do_action(t_stack_elem **head_a, t_stack_elem **head_b,
 			char *action)
 {
-	if (ft_strncmp(action, "sa", 3) == 0)
+	if (ft_strncmp(action, "sa") == 0)
 		swap(head_a, 'a', 0);
-	else if (ft_strncmp(action, "sb", 3) == 0)
+	else if (ft_strncmp(action, "sb") == 0)
 		swap(head_b, 'b', 0);
-	else if (ft_strncmp(action, "ss", 3) == 0)
+	else if (ft_strncmp(action, "ss") == 0)
 		double_swap(head_a, head_b, 0);
-	else if (ft_strncmp(action, "pa", 3) == 0)
+	else if (ft_strncmp(action, "pa") == 0)
 		push_to_other_stack(head_b, head_a, 'a', 0);
-	else if (ft_strncmp(action, "pb", 3) == 0)
+	else if (ft_strncmp(action, "pb") == 0)
 		push_to_other_stack(head_a, head_b, 'b', 0);
-	else if (ft_strncmp(action, "ra", 3) == 0)
+	else if (ft_strncmp(action, "ra") == 0)
 		rotate(head_a, 'a', 0);
-	else if (ft_strncmp(action, "rb", 3) == 0)
+	else if (ft_strncmp(action, "rb") == 0)
 		rotate(head_b, 'b', 0);
-	else if (ft_strncmp(action, "rra", 3) == 0)
+	else if (ft_strncmp(action, "rra") == 0)
 		rev_rotate(head_a, 'a', 0);
-	else if (ft_strncmp(action, "rrb", 3) == 0)
+	else if (ft_strncmp(action, "rrb") == 0)
 		rev_rotate(head_b, 'b', 0);
-	else if (ft_strncmp(action, "rrr", 3) == 0)
+	else if (ft_strncmp(action, "rrr") == 0)
 		double_rev_rotate(head_a, head_b, 0);
-	else if (ft_strncmp(action, "rr", 3) == 0)
+	else if (ft_strncmp(action, "rr") == 0)
 		double_rotate(head_a, head_b, 0);
 	else
 		return (1);
